@@ -1,0 +1,36 @@
+1. Installer le client MySQL
+
+Si tu souhaites installer le client MySQL, utilise cette commande :
+
+bash
+
+sudo apt update
+sudo apt install mysql-client-core-8.0
+
+2. Installer le client MariaDB
+
+Si tu préfères utiliser MariaDB (qui est une alternative à MySQL), tu devras activer le dépôt universe et installer le client MariaDB :
+
+bash
+
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install mariadb-client-core-10.6
+
+3. Vérifier l'installation
+
+Une fois l'installation terminée, tu peux vérifier si le client MySQL/MariaDB est bien installé en tapant :
+
+bash
+
+mysql --version
+
+Cela te donnera la version installée du client MySQL ou MariaDB.
+4. Se connecter à MySQL/MariaDB
+
+Une fois installé, tu peux te connecter à ton serveur MySQL/MariaDB avec la commande suivante :
+
+bash
+
+mysql -u root -p
+ 
